@@ -42,7 +42,7 @@ WHITE_HEAD = [
 ]
 # ヘッダ＆ボディを検査
 WHITE_DATA = [
-	[r'左達'.encode('utf8')],
+	[r'(左達|武蔵野市|吉祥寺)'.encode('utf8')],
 ]
 
 # （上記を除いて）どれかにマッチするメールはSPAM判定
