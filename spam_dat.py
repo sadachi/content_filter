@@ -64,20 +64,22 @@ CHECK_DATA = [
 	[rb'Bitcoin', rb'BTC'],
 	[r'ビットコイン'.encode('utf8'), r'警察'.encode('utf8')],
 	[r'ビットコイン'.encode('iso-2022-jp'), r'警察'.encode('iso-2022-jp')],
-	#[rb'&#12499;&#12483;&#12488;&#12467;&#12452;&#12531;', rb'&#35686;&#23519;'],
 	[r'(copy and paste|Ƿorn|Ƿayment|camera|video)'.encode('utf8')],
 
 	# ETC系
-	[r'(ETCサービス|ＥＴＣサービス|ETC利用照会|ＥＴＣ利用照会)'.encode('utf8')],
+	[r'ETCサービス'.encode('utf8')],
+	[r'ＥＴＣサービス'.encode('utf8')],
+	[r'ETC利用照会'.encode('utf8')],
+	[r'ＥＴＣ利用照会'.encode('utf8')],
 
 	# えきねっと
 	[r'えきねっと'.encode('utf8'), r'退会'.encode('utf8')],
 
 	# Amazon系
-	[
-	  rb'Amazon',
-	  r'(エラー|維持|プライム|ロック|解約)'.encode('utf8'),
-	],
+	[rb'Amazon', r'機能が制限'.encode('utf8')],
+	[rb'Amazon', r'維持'.encode('utf8')],
+	[rb'Amazon', r'ロック'.encode('utf8')],
+	[rb'Amazon', r'解約'.encode('utf8')],
 ]
 
 # SPAM判定されたメールのリターンコード
