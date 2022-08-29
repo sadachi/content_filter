@@ -64,7 +64,6 @@ CHECK_DATA = [
 	[rb'Bitcoin', rb'BTC'],
 	[r'ビットコイン'.encode('utf8'), r'警察'.encode('utf8')],
 	[r'ビットコイン'.encode('iso-2022-jp'), r'警察'.encode('iso-2022-jp')],
-	[r'(copy and paste|Ƿorn|Ƿayment|camera|video)'.encode('utf8')],
 
 	# ETC系
 	[r'ETCサービス'.encode('utf8')],
