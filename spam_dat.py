@@ -42,7 +42,7 @@ WHITE_HEAD = [
 ]
 # ヘッダ＆ボディを検査
 WHITE_DATA = [
-	[r'(左達|武蔵野市|吉祥寺)'.encode('utf8')],
+	[r'(左達|武蔵野市|吉祥寺|ギフト券)'.encode('utf8')],
 ]
 
 # （上記を除いて）どれかにマッチするメールはSPAM判定
@@ -63,7 +63,7 @@ CHECK_DATA = [
 	# Bitcoin系
 	[rb'Bitcoin', rb'BTC'],
 	[r'ビットコイン'.encode('utf8'), r'警察'.encode('utf8')],
-	[r'ビットコイン'.encode('iso-2022-jp'), r'警察'.encode('iso-2022-jp')],
+	#[r'ビットコイン'.encode('iso-2022-jp'), r'警察'.encode('iso-2022-jp')],
 
 	# ETC系
 	[r'ETCサービス'.encode('utf8')],
@@ -79,6 +79,15 @@ CHECK_DATA = [
 	[rb'Amazon', r'維持'.encode('utf8')],
 	[rb'Amazon', r'ロック'.encode('utf8')],
 	[rb'Amazon', r'解約'.encode('utf8')],
+	[rb'Amazon', r'親愛'.encode('utf8')],
+	[rb'Amazon', r'直ちに更新'.encode('utf8')],
+
+	# イオン系
+	[r'イオン'.encode('utf8'), r'一部制限'.encode('utf8')],
+	[rb'AEON', r'一部制限'.encode('utf8')],
+
+	# 中国リンク
+	[rb'http[s]?://[^/]+\.cn/'],
 ]
 
 # SPAM判定されたメールのリターンコード

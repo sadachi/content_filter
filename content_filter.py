@@ -505,7 +505,7 @@ def loadcheck_spam_dat():
 					SPAM_ERRCODE = spam_dat.SPAM_ERRCODE,
 				)
 				obj.WHITE_RE = [[re.compile(x, re.IGNORECASE) for x in y] for y in obj.WHITE_DATA]
-				obj.CHECK_RE = [[re.compile(re.escape(x), re.IGNORECASE) for x in y] for y in obj.CHECK_DATA]
+				obj.CHECK_RE = [[re.compile(x, re.IGNORECASE) for x in y] for y in obj.CHECK_DATA]
 
 				obj.WHITE_HEAD_RE = [[re.compile(x, re.IGNORECASE) for x in y] for y in obj.WHITE_HEAD]
 				obj.CHECK_HEAD_RE = [[re.compile(x, re.IGNORECASE) for x in y] for y in obj.CHECK_HEAD]
