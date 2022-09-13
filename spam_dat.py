@@ -60,8 +60,12 @@ CHECK_DATA = [
 	# （b64デコード後の）元メール文字コードに合わせる必要あり。
 	# encode を使う場合、rb'' ではなくr'' を使う
 
+	# 汎用
+	[r'銀行'.encode('utf8'), r'再開'.encode('utf8'), r'認証'.encode('utf8')],
+	[r'アカウント'.encode('utf8'), r'24時間以内'.encode('utf8')],
+	[r'認証'.encode('utf8'), r'24時間以内'.encode('utf8')],
+
 	# Bitcoin系
-	[rb'Bitcoin', rb'BTC'],
 	[r'ビットコイン'.encode('utf8'), r'警察'.encode('utf8')],
 	#[r'ビットコイン'.encode('iso-2022-jp'), r'警察'.encode('iso-2022-jp')],
 
@@ -76,7 +80,7 @@ CHECK_DATA = [
 
 	# Amazon系
 	[rb'Amazon', r'機能が制限'.encode('utf8')],
-	[rb'Amazon', r'維持'.encode('utf8')],
+	[rb'Amazon', r'アカウントを維持'.encode('utf8')],
 	[rb'Amazon', r'ロック'.encode('utf8')],
 	[rb'Amazon', r'解約'.encode('utf8')],
 	[rb'Amazon', r'親愛'.encode('utf8')],
