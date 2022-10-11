@@ -42,7 +42,7 @@ WHITE_HEAD = [
 ]
 # ヘッダ＆ボディを検査
 WHITE_DATA = [
-	[r'(左達|武蔵野市|吉祥寺|ギフト券)'.encode('utf8')],
+	[r'(左達|さだち|武蔵野市|吉祥寺|システムメンテナンス|日本酒原価酒蔵)'.encode('utf8')],
 ]
 
 # （上記を除いて）どれかにマッチするメールはSPAM判定
@@ -64,10 +64,23 @@ CHECK_DATA = [
 	[r'銀行'.encode('utf8'), r'再開'.encode('utf8'), r'認証'.encode('utf8')],
 	[r'アカウント'.encode('utf8'), r'24時間以内'.encode('utf8')],
 	[r'認証'.encode('utf8'), r'24時間以内'.encode('utf8')],
+        [r'銀行'.encode('utf8'), r'一部制限'.encode('utf8')],
+        [r'カード'.encode('utf8'), r'一部制限'.encode('utf8')],
+        [r'銀行'.encode('utf8'), r'盗もうと'.encode('utf8')],
+        [r'カード'.encode('utf8'), r'盗もうと'.encode('utf8')],
+	[rb'charset="gb2312"'],
+	[r'与信失敗'.encode('utf8')],
+	[r'手続き受付時より24時間'.encode('utf8')],
+	[r'正当な保有者'.encode('utf8')],
+	[r'異常な'.encode('utf8'), r'一時保留'.encode('utf8')],
 
 	# Bitcoin系
 	[r'ビットコイン'.encode('utf8'), r'警察'.encode('utf8')],
+	[rb'Bitcoin', rb'BTC'],
 	#[r'ビットコイン'.encode('iso-2022-jp'), r'警察'.encode('iso-2022-jp')],
+	[r'ビットコイン'.encode('utf8'), r'マスターベーション'.encode('utf8')],
+	[rb'bitcoin', r'マスターベーション'.encode('utf8')],
+	[rb'BTC', r'マスターベーション'.encode('utf8')],
 
 	# ETC系
 	[r'ETCサービス'.encode('utf8')],
@@ -85,6 +98,9 @@ CHECK_DATA = [
 	[rb'Amazon', r'解約'.encode('utf8')],
 	[rb'Amazon', r'親愛'.encode('utf8')],
 	[rb'Amazon', r'直ちに更新'.encode('utf8')],
+        [rb'Amazon', r'24時間以内'.encode('utf8')],
+	[rb'amazon.co.jp', rb'from: <.+@gmail.com>'],
+	[rb'Amazon', r'支払方法を更新'.encode('utf8')],
 
 	# イオン系
 	[r'イオン'.encode('utf8'), r'一部制限'.encode('utf8')],
