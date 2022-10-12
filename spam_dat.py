@@ -108,6 +108,9 @@ CHECK_DATA = [
 
 	# 中国リンク
 	[rb'http[s]?://[^/]+\.cn/'],
+	
+	# 中国MTA
+	[rb'Received:.+\.cn \['],
 ]
 
 # SPAM判定されたメールのリターンコード
