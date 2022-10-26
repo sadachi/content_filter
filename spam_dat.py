@@ -73,6 +73,9 @@ CHECK_DATA = [
 	[r'手続き受付時より24時間'.encode('utf8')],
 	[r'正当な保有者'.encode('utf8')],
 	[r'異常な'.encode('utf8'), r'一時保留'.encode('utf8')],
+	[r'銀行'.encode('utf8'), r'随時こちらからお電話'.encode('utf8')],
+	[r'客勛'.encode('utf8')],
+	[r'国税庁'.encode('utf8'), r'納税''.encode('utf8')],
 
 	# Bitcoin系
 	[r'ビットコイン'.encode('utf8'), r'警察'.encode('utf8')],
@@ -99,6 +102,7 @@ CHECK_DATA = [
 	[rb'Amazon', r'親愛'.encode('utf8')],
 	[rb'Amazon', r'直ちに更新'.encode('utf8')],
         [rb'Amazon', r'24時間以内'.encode('utf8')],
+	[rb'Amazon', r'48時間以内'.encode('utf8')],
 	[rb'amazon.co.jp', rb'from: <.+@gmail.com>'],
 	[rb'Amazon', r'支払方法を更新'.encode('utf8')],
 
